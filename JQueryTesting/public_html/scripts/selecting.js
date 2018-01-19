@@ -4,6 +4,8 @@ jQuery(document).ready(function(){
     $("h1").text("jQuery done did it!");
 });
 
+//$() is an alias for jQuery()... much less typing!
+
 $("#destinations"); // find the destinations list
 
 $(".promo"); // find the element(s) using the promo class
