@@ -7,17 +7,34 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Inline CSS -->
+        <style type="text/css">
+            html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+        </style>
         
-        <script src="../scripts/jquery-3.2.1.min.js"></script>
-        <script src ="../scripts/traversingDom.js"></script>
+        <!-- Linked CSS -->
+        <link type="text/css" rel="stylesheet" href="../styleSheets/styleTesting.css">
     <body>
         <h1>1st Test Heading (h1)</h1>
         <h2>2nd Test Heading (h2)</h2>
+        <h3>3rd Test Heading (h2)</h3>
         <p>Test paragraph 1.</p>
+        <p>Test paragraph 2.</p>
+        <p>Test paragraph 3.</p>
         <ul id ="destinations">
             <li>Rome</li>
             <li>Paris</li>
             <li class='promo'>Rio</li>
         </ul>
+        <ol id ="steps">
+            <li class='important'>Buy tickets</li>
+            <li>Pack bags</li>
+            <li>Plan destinations</li>
+        </ol>
     </body>
 </html>

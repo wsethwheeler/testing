@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Testing: DOM Events</title>
+        <!-- favicon taken from https://www.freefavicon.com/freefavicons/objects/ -->
+        <link rel="shortcut icon" href="../photos/favicon.ico" />
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="../scripts/jquery-3.2.1.min.js"></script>
+        <script src ="../scripts/domEvents.js"></script>
+    <body>
+        <div class="exTour" data-daily-price="357">
+            <h2>Paris, France Tour</h2>
+            <p>$<span id="total">2,499</span> for <span id="nights-count">7</span> Nights</p>
+            <p>
+                <label for="nights">Number of Nights</label>
+            </p>
+            <p>
+                <input type="number" id="nights" value="7">
+            </p>
+        </div>
+
+        <br><br><br><br><br><br><br>
+        <hr>
+        <br><br><br><br><br><br><br>
+
+
+        <div id="all-tours" class="links">
+            <h1>Guided Tours</h1>
+            <ul>
+                <li class="tour usa" data-discount="199">
+                    <h2>New York, New York</h2>
+                    <span class="details">$1,899 for 7 nights</span>
+                    <button class="book">Book Now</button>
+                    <a href="#" class="see-photos">See Photos</a>
+                    <ul class="photos">
+                        <li>
+                            <img src="../photos/mario.png">
+                            <span>Mario</span>
+                        </li>
+                        <li>
+                            <img src="../photos/homer.png">
+                            <span>Homer Simpson</span>
+                        </li>
+                        <li>
+                            <img src="../photos/meatboy.png">
+                            <span>Super Meatboy</span>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li class="tour france" data-discount="99">
+                    <h2>Paris, France</h2>
+                    <span class="details">$1,499 for 5 nights</span>
+                    <button class="book">Book Now</button>
+                    <a href="#" class="see-photos">See Photos</a>
+                    <ul class="photos">
+                        <li>
+                            <img src="../photos/mario.png">
+                            <span>Mario</span>
+                        </li>
+                        <li>
+                            <img src="../photos/homer.png">
+                            <span>Homer Simpson</span>
+                        </li>
+                        <li>
+                            <img src="../photos/meatboy.png">
+                            <span>Super Meatboy</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tour uk" data-discount="149">
+                    <h2>London, UK</h2>
+                    <span class="details">$2,199 for 5 nights</span>
+                    <button class="book">Book Now</button>
+                    <a href="#" class="see-photos">See Photos</a>
+                    <ul class="photos">
+                        <li>
+                            <img src="../photos/mario.png">
+                            <span>Mario</span>
+                        </li>
+                        <li>
+                            <img src="../photos/homer.png">
+                            <span>Homer Simpson</span>
+                        </li>
+                        <li>
+                            <img src="../photos/meatboy.png">
+                            <span>Super Meatboy</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <br><br><br><br><br><br><br>
+        <hr>
+        <br><br><br><br><br><br><br>
+
+        <div id="coolPhotos">
+            <h2>Cool Images</h2>
+            <button>Toggle photos of neato images</button>
+            <ul class="exPhotos">
+                <li>
+                    <img src="../photos/mario.png">
+                    <span>Mario</span>
+                </li>
+                <li>
+                    <img src="../photos/homer.png">
+                    <span>Homer Simpson</span>
+                </li>
+                <li>
+                    <img src="../photos/meatboy.png">
+                    <span>Super Meatboy</span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
