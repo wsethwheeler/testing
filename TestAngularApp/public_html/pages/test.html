@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- 'ng-app' creates an angular application by running the module when the document loads -->
+<html ng-app="store"> 
+    <head>
+        <title>Store App</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <!--The scope of this controller is only INSIDE this attached element... can't access it outside-->
+    <body ng-controller="StoreController as store">
+        <!--        
+        You can get at each element using array index, but that's not very dynamic / good...
+        Example: {{store.products[0].price}}
+        -->
+        
+        <!--A directive to HIDE item if soldOut is true; see 'ng-show' below for opposite-->
+        <!--<div ng-hide="store.product.soldOut">-->
+        
+        <!--Repeat this div for EACH product in our store app-->
+        <div ng-repeat="product in store.products">
+            <h1>{{product.name}}</h1>
+            <h2>${{product.price}}</h2>
+            <p>{{product.description}}</p>
+            
+            <!--A directive is used to SHOW the button if canPurchase is true-->
+            <button ng-show="product.canPurchase">Add to Cart</button>
+        </div>
+        
+        <!--Load Angular-->
+        <script type="text/javascript" src="../scripts/angular.min.js"></script>
+        <!--Load our app-->
+        <script type="text/javascript" src="../scripts/app.js"></script>
+        
+        <!--Example angular expression!
+        <p>{{"hello " + "you"}}</p>
+        -->
+    </body>
+</html>
