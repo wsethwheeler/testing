@@ -17,19 +17,19 @@
         <!--<div ng-hide="store.product.soldOut">-->
         
         <!--Repeat this div for EACH product in our store app-->
-        <div ng-repeat="product in store.products">
-            <h1>{{product.name}}</h1>
-            <h2>${{product.price}}</h2>
-            <p>{{product.description}}</p>
+        <div ng-repeat="product in store.products | orderBy:'-price'"> <!-- '-' here means DESCENDING orderBy -->
+            <h1>{{product.name | uppercase}}</h1> <!-- uppercase filter -->
+            <h2>{{product.price | currency}}</h2> <!-- currency filter -->
+            <p>{{product.description | limitTo:8}}</p> <!-- limitTo filter -->
             
             <!--A directive is used to SHOW the button if canPurchase is true-->
             <button ng-show="product.canPurchase">Add to Cart</button>
         </div>
         
         <!--Load Angular-->
-        <script type="text/javascript" src="../scripts/angular.min.js"></script>
+        <script type="text/javascript" src="../lib/angular.min.js"></script>
         <!--Load our app-->
-        <script type="text/javascript" src="../scripts/app.js"></script>
+        <script type="text/javascript" src="../scripts/app1.js"></script>
         
         <!--Example angular expression!
         <p>{{"hello " + "you"}}</p>

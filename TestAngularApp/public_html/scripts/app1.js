@@ -19,8 +19,15 @@
         {
             name: 'Pentagonal Gem',
             price: 5.95,
-            description: 'Powerful stuff...',
+            description: 'Coolio.',
             canPurchase: false,
+            soldOut: false
+        },
+        {
+            name: 'POWER Gem',
+            price: 12,
+            description: 'Powerful stuff...',
+            canPurchase: true,
             soldOut: false
         }
     ];
